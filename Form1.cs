@@ -35,5 +35,13 @@ namespace Bai14_SoChinhPhuong
             int sqrt = (int)Math.Sqrt(so);
             return sqrt * sqrt == so;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i*i <= 1000; i++)
+            {
+                lsb1.Items.Add(i * i);
+            }
+        }
     }
 }
